@@ -1,0 +1,144 @@
+*{
+ box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background: url('images/bg.png') no-repeat  hsl(225, 100%, 94%);
+  background-size: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-family: 'Red Hat Display', sans-serif;
+  
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+  max-width: 327px;
+  text-align: center;
+  padding: 1em;
+  background-color: #fff;
+  box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+ 
+}
+.content-title{
+  margin-bottom:0;
+  font-size: 1.375rem;
+  color: #1F2E55;
+}
+.content-desc{
+  font-size: 0.9375rem;
+  margin-bottom:1.5em;
+  color: #717FA6;
+}
+img{
+ display: block;
+}
+
+.info-container{
+  display: flex;
+  align-items: center;
+  width: 90%;
+  justify-content: space-evenly;
+  background: #F7F9FF;
+  border-radius: 11px;
+  padding: 1em;
+}
+.info-title{
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 19px;
+  color: #1F2E55;
+  margin:0;
+}
+.information{
+  margin-left: 1em;
+}
+
+
+.info-price{
+  margin: .2em;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #717FA6;
+
+}
+.change{
+  margin-left: auto;
+  color: #382AE1;
+  font-weight: 700;
+  font-size: 0.8125rem;
+  text-decoration-line: underline;
+}
+.change:hover,
+.change:focus{
+  color: #766CF1;
+}
+.btn1st,.btn2nd,.change{
+  cursor: pointer;
+}
+.btn1st{
+  font-size: 0.9375rem;
+  padding: 1em 4em;
+  font-weight: 900;
+  color: #fff;
+  background: #382AE1;
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+  border-radius: 11px;
+  border: none;
+  margin: 1.5em 0;
+
+
+}
+.btn1st:hover,
+.btn1st:focus
+{
+  background-color: #766CF1;
+}
+.btn2nd{
+  font-size: 0.9375rem;
+  background: none;
+  color: #717FA6;
+  font-weight: 900;
+  border: none;
+  margin-bottom: 1em;
+}
+.btn2nd:hover,
+.btn2nd:focus{
+  color: #1F2E55;
+}
+@media(min-width:608px){
+  body{
+    background-image: url('images/bg2.png');
+  }
+  .content-title{
+    font-size: 1.75rem;
+  }
+  .content-desc,
+  .info-title,
+  .info-price{
+    font-size: 1rem;
+  }
+  
+  .change{
+    font-size: 0.875rem;
+  }
+  .img{
+    content: url('images/Music_Flatline-desktop.png');
+  }
+  .content{
+    max-width: 451px;
+  }
+  .btn1st{
+    padding: 1em 7em;
+  }
+}
